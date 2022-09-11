@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-image: url("../img/backgrounds/main.png");
+    background-position: center;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url("./Fonts/Iranian Sans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DastNevis;
+    src: url("./Fonts/danstevis.otf");
+}
+
+.app_div{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+}
+
+.div_content{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+}
+
+.h2{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    font-family: IranSans;
+}
+
+#menu_icon{
+    color: white;
+    font-size: 35px;
+    margin: 15px 30px;
+    cursor: pointer;
+}
+
+    /* side bar */
+
+.div_side_bar{
+    background-image: url("../img/backgrounds/sidebar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: fixed;
+    width: 210px;
+    padding: 0px;
+    height: 100vh;
+    right: -210px;
+    transition: all 500ms ease;
+}
+
+.a_menu{
+    display: block;
+    font-family: IranSans;
+    font-size: medium;
+    padding: 20px 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.a_menu:hover{
+    background-color: black;
+    color: white;
+    transition: all 300ms ease;
+}
+
+.a_menu:first-child{
+    margin-top: 150px;
+}
+
+        /* Users */
+
+.input_search{
+    font-size: large;
+    padding: 10px 5px 10px 5px;
+    width: 600px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-family: DastNevis;
+    margin: auto;
+    display: block;
+}
+
+.div_search_users{
+    margin: 60px 0px;
+}
+
+    /* Table */
+
+.table{
+    background-color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 1050px;
+    margin: auto;
+    font-size: 12px;
+    font-family: IranSans;
+    border-radius: 5px;
+}
+
+.table th,td{
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.table th{
+    font-family: DastNevis;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.table tr:first-child{
+    border-bottom: 2px solid rgb(4, 0, 255);
+}
+
+.table tr{
+    border-bottom: 1px solid gray;
+}
+
+@media screen and (max-width:980px) {
+    .table{
+        width: 70%;
+    }
+}
+
+#edit_icon{
+    margin-left: 10px;
+    color: rgb(73, 204, 8);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#delete_icon{
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.input_label{
+    font-family: DastNevis;
+    margin-right: 95px;
+}
+
+        /* add_users */
+.div_add_user{
+    width: 650px;
+    background-color: rgb(215, 215, 218);
+    margin: auto;
+    padding: 40px 15px;
+    border-radius: 5px;
+}
+
+.input_add_users{
+    width: 450px;
+    outline: none;
+    border: none;
+    font-family: IranSans;
+    padding: 10px 5px;
+    font-size: 15px;
+    margin: 2.5px auto 10px auto;
+    display: block;
+    border-radius: 5px;
+    letter-spacing: 0.8px;
+    overflow: visible;
+}
+
+.input_add_users:focus{
+    border: 4px solid rgb(116, 195, 221);
+}
+
+
+.sabt_button{
+    border: none;
+    color: white;
+    font-family: IranSans;
+    padding: 12.5px 10px;
+    margin: 15px 0px 0px 20px;
+    border-radius: 5px;  
+    font-size: 15px; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+#sabt_add{
+    background-color: rgb(0, 84, 0);
+}
+
+#sabt_add:hover{
+    background-color: green;
+}
+
+#back_add{
+    background-color: rgb(191, 3, 3);
+}
+
+#back_add:hover{
+    background-color: red;
+}
+
+
+    /* scors Table */
+
+.table_socrs{
+    background-color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 450px;
+    margin: 35px auto;
+    font-size: 14px;
+    font-family: IranSans;
+    border-radius: 5px;
+}
+
+.th_td_scor{
+    padding: 10px 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.enter_Scor_tr{
+    border-bottom: 1px solid gray;
+}
+
+.enter_Scor_tr:first-child{
+    border-bottom: 2px solid black;
+}
+
+#edit_icon_scors{
+    color: rgb(89, 15, 131);
+    cursor: pointer;
+}
+
+
+        /* scors form */
+
+.div_scors_form{
+    width: 500px;
+    background-color: white;  
+    border-radius: 5px;
+    margin: 35px auto;
+    padding: 25px 10px;
+}        
+
+.div_input_scors{
+    width: 180px;
+    margin: 20px auto;
+}
+
+.input_search_scors{
+    border: none;
+    outline: none;
+    padding: 10px 10px 10px 2.5px;
+    width: 600px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+.scors_input{
+    background-color: white;
+    border: none;
+    width: 100px;
+    border-bottom: 2px solid black;
+    outline: none;
+    text-align: center;
+}
+
+.scors_table{
+    display: inline-block;
+    width: 70px;
+    font-family: IranSans;
+}
+
+#button_back_scors{
+    background-color: rgb(191, 3, 3);
+}
+
+#button_add_scors{
+    background-color: rgb(0, 84, 0);
+    margin: 10px;
+}
+
+.botton_sabt_scors{
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: IranSans;
+    color: white;
+    cursor: pointer;
+}
+
+.div_button_scors{
+    direction: ltr;
+}
